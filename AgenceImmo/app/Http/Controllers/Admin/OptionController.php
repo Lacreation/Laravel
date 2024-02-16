@@ -15,7 +15,7 @@ class OptionController extends Controller
     public function index()
     {
         return view('admin.options.index', [
-            'properties' => Option::paginate(25)
+            'options' => Option::paginate(25)
         ]);
     }
 
